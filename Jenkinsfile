@@ -8,6 +8,9 @@ pipeline {
     stages {
 
 	    stage('Deploy') {
+		    when {
+       			branch '2.7.0'
+  			 }
 	        steps {
 	            build job: 'Shopizer_06_Deploiement' 
 		 post {
