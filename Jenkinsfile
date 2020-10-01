@@ -9,7 +9,7 @@ pipeline {
 
 	    stage('Deploy') {
 	        steps {
-	            build job: 'Shopizer_06_Deploiement' 
+	            build job: 'Shopizer_02_Integration' 
     
 	        }
 	    }
